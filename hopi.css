@@ -1,0 +1,332 @@
+/* =========================
+   HOPI PAGE CSS
+   Escopo limitado à página HOPI
+========================= */
+
+body.hopi-page {
+    --hopi-green: #8eaf41;
+    --hopi-light-green: #eaf1d2;
+    --hopi-bg: #eef4d6;
+    --hopi-dark: #111111;
+    --hopi-white: #ffffff;
+
+    background: var(--hopi-bg);
+    color: var(--hopi-dark);
+}
+
+/* Evita que estilos globais interfiram demasiado */
+body.hopi-page .hopi-main {
+    background: var(--hopi-bg);
+    overflow: hidden;
+}
+
+body.hopi-page img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =========================
+   HERO
+========================= */
+
+body.hopi-page .hopi-hero {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: var(--hopi-bg);
+}
+
+body.hopi-page .hopi-hero img {
+    width: 100%;
+    display: block;
+}
+
+/* =========================
+   CONTAINERS
+========================= */
+
+body.hopi-page .hopi-about,
+body.hopi-page .hopi-process,
+body.hopi-page .hopi-target,
+body.hopi-page .hopi-identity,
+body.hopi-page .hopi-icons,
+body.hopi-page .hopi-mental-map,
+body.hopi-page .hopi-wireframes,
+body.hopi-page .hopi-closing {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+    padding: 120px 0;
+}
+
+/* =========================
+   SECTION TAG
+========================= */
+
+body.hopi-page .section-tag {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 70px;
+    padding: 0;
+    background: transparent;
+    color: inherit;
+}
+
+body.hopi-page .section-tag span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: #000000;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+body.hopi-page .about-top {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 90px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+body.hopi-page .about-image img {
+    width: 560px;
+    height: auto;
+}
+
+body.hopi-page .about-text h2 {
+    max-width: 820px;
+    margin: 0 0 24px;
+}
+
+body.hopi-page .about-text p {
+    max-width: 720px;
+    margin: 0;
+}
+
+/* =========================
+   PROCESS
+========================= */
+
+body.hopi-page .hopi-process {
+    position: relative;
+}
+
+body.hopi-page .process-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+body.hopi-page .process-text h2,
+body.hopi-page .target-text h2,
+body.hopi-page .identity-text h2 {
+    margin: 0 0 24px;
+}
+
+body.hopi-page .process-text p,
+body.hopi-page .target-text p,
+body.hopi-page .identity-text p {
+    margin: 0;
+    max-width: 680px;
+}
+
+/* =========================
+   TARGET AUDIENCE
+========================= */
+
+body.hopi-page .target-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+/* =========================
+   VISUAL IDENTITY
+========================= */
+
+body.hopi-page .identity-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+body.hopi-page .identity-colors {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+body.hopi-page .color-card {
+    width: 140px;
+    min-height: 140px;
+    border-radius: 24px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    font-weight: 700;
+}
+
+body.hopi-page .color-card.green {
+    background: var(--hopi-green);
+    color: var(--hopi-white);
+}
+
+body.hopi-page .color-card.light-green {
+    background: var(--hopi-light-green);
+    color: var(--hopi-dark);
+}
+
+body.hopi-page .color-card.dark {
+    background: var(--hopi-dark);
+    color: var(--hopi-white);
+}
+
+body.hopi-page .color-card.white {
+    background: var(--hopi-white);
+    color: var(--hopi-dark);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   ICONS
+========================= */
+
+body.hopi-page .icons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+body.hopi-page .icon-card {
+    background: var(--hopi-light-green);
+    border-radius: 28px;
+    padding: 36px;
+    text-align: center;
+}
+
+body.hopi-page .icon-card img {
+    width: 80px;
+    margin: 0 auto 20px;
+}
+
+body.hopi-page .icon-card p {
+    margin: 0;
+}
+
+/* =========================
+   MENTAL MAP
+========================= */
+
+body.hopi-page .hopi-mental-map img {
+    display: block;
+    width: 100%;
+    border-radius: 32px;
+}
+
+/* =========================
+   WIREFRAMES
+========================= */
+
+body.hopi-page .wireframes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+body.hopi-page .wireframes-grid img {
+    display: block;
+    width: 100%;
+    border-radius: 24px;
+}
+
+/* =========================
+   CLOSING
+========================= */
+
+body.hopi-page .hopi-closing {
+    width: 100%;
+    padding: 0;
+}
+
+body.hopi-page .hopi-closing img {
+    width: 100%;
+    display: block;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+    body.hopi-page .hopi-about,
+    body.hopi-page .hopi-process,
+    body.hopi-page .hopi-target,
+    body.hopi-page .hopi-identity,
+    body.hopi-page .hopi-icons,
+    body.hopi-page .hopi-mental-map,
+    body.hopi-page .hopi-wireframes {
+        width: min(680px, 90%);
+        padding: 80px 0;
+    }
+
+    body.hopi-page .about-top,
+    body.hopi-page .process-content,
+    body.hopi-page .target-content,
+    body.hopi-page .identity-content {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    body.hopi-page .about-image img {
+        width: 120px;
+    }
+
+    body.hopi-page .icons-grid,
+    body.hopi-page .wireframes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    body.hopi-page .hopi-about,
+    body.hopi-page .hopi-process,
+    body.hopi-page .hopi-target,
+    body.hopi-page .hopi-identity,
+    body.hopi-page .hopi-icons,
+    body.hopi-page .hopi-mental-map,
+    body.hopi-page .hopi-wireframes {
+        padding: 60px 0;
+    }
+
+    body.hopi-page .section-tag {
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+
+    body.hopi-page .section-tag span {
+        font-size: 12px;
+        padding: 9px 14px;
+    }
+
+    body.hopi-page .icons-grid,
+    body.hopi-page .wireframes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    body.hopi-page .color-card {
+        width: 100%;
+    }
+}

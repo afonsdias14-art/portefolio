@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="nina-page">
 
   <!-- HEADER / MENU -->
   <header class="site-header">
@@ -32,15 +32,176 @@
     </div>
   </header>
 
-  <main>
+  <main class="nina-main">
 
-    <!-- PROJETO NINA -->
-    <section class="project-full-image-section">
-      <img src="assents/pranchetas/nina/nina1.jpg" alt="nina" class="project-full-image">
-      <img src="assents/pranchetas/nina/nina2.jpg" alt="nina" class="project-full-image">
-      <img src="assents/pranchetas/nina/nina3.jpg" alt="nina" class="project-full-image">
-      <img src="assents/pranchetas/nina/nina4.jpg" alt="nina" class="project-full-image">
-      <img src="assents/pranchetas/nina/nina5.jpg" alt="nina" class="project-full-image">
+    <!-- HERO COM GIF / MASCOTE -->
+    <section class="nina-hero" aria-label="Apresentação do projecto Nina">
+      <div class="nina-hero-inner">
+
+        <!-- Troca este ficheiro pelo teu GIF final -->
+        <img
+          src="assents/pranchetas/nina/ninagif.gif"
+          alt="Mascote Nina a andar"
+          class="nina-hero-gif"
+        />
+
+      </div>
+    </section>
+
+    <!-- LOGO PRINCIPAL -->
+    <section class="nina-primary-logo">
+      <img
+        src="assents/pranchetas/nina/nina2.jpg"
+        alt="Logótipo principal Nina 3D Studio"
+        class="nina-primary-logo-img"
+      />
+    </section>
+
+
+    <!-- CORES -->
+    <section class="nina-colours" aria-label="Paleta de cores Nina">
+      <img
+        src="assents/pranchetas/nina/3D2.jpg"
+        alt="Logótipo principal Nina 3D Studio"
+        class="nina-primary-logo-img"
+      />
+
+    </section>
+
+    <!-- MOCKUPS COM HOVER -->
+    <section class="nina-mockups" aria-label="Mockups Nina">
+
+      <div class="nina-mockups-inner">
+
+        <h2>MOCKUPS</h2>
+
+        <div class="nina-mockups-grid">
+
+          <article class="nina-mockup-card nina-mockup-large">
+            <img
+              src="assents/pranchetas/nina/saco.png"
+              alt="Mockup de tote bag Nina"
+              class="mockup-default"
+            />
+            <img
+              src="assents/pranchetas/nina/ninaetiquetas.png"
+              alt="Variação de tote bag Nina"
+              class="mockup-hover"
+            />
+          </article>
+
+          <article class="nina-mockup-card">
+            <img
+              src="assents/pranchetas/nina/autocolante.png"
+              alt="Mockup de autocolante Nina"
+              class="mockup-default"
+            />
+            <img
+              src="assents/pranchetas/nina/Outdoor Arch Sign Mockup.png"
+              alt="Variação de autocolante Nina"
+              class="mockup-hover"
+            />
+          </article>
+
+          <article class="nina-mockup-card nina-mockup-tall">
+            <img
+              src="assents/pranchetas/nina/letreiro.png"
+              alt="Mockup de sinalética Nina"
+              class="mockup-default"
+            />
+            <img
+              src="assents/pranchetas/nina/saco2.png"
+              alt="Variação de sinalética Nina"
+              class="mockup-hover"
+            />
+          </article>
+
+          <article class="nina-mockup-card">
+            <img
+              src="assents/pranchetas/nina/cartoes.png"
+              alt="Mockup de cartões Nina"
+              class="mockup-default"
+            />
+            <img
+              src="assents/pranchetas/nina/Sticker Mockup.png"
+              alt="Variação de cartões Nina"
+              class="mockup-hover"
+            />
+          </article>
+
+          <article class="nina-mockup-card nina-mockup-wide">
+            <img
+              src="assents/pranchetas/nina/Ativo 6.png"
+              alt="Mockup de padrão Nina"
+              class="mockup-default"
+            />
+            <img
+              src="assents/pranchetas/nina/fitacola.png"
+              alt="Variação de padrão Nina"
+              class="mockup-hover"
+            />
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TEXTO DO PROJECTO -->
+    <section class="nina-project-text">
+      <p>
+        Nina 3D Studio transformamos ideias em objetos reais através da impressão 3D com foco no design decorativo.
+        Cada peça nasce de um conceito digital e ganha forma camada a camada, resultando em criações únicas que
+        combinam criatividade, detalhe e funcionalidade.
+      </p>
+
+      <p>
+        Desenvolvemos objetos pensados para dar identidade aos espaços, desde vasos e tulipas a figuras decorativas
+        e candeeiros, explorando diferentes formas, volumes e texturas. Mais do que produzir, procuramos criar peças
+        que se destaquem e que tragam personalidade a qualquer ambiente.
+      </p>
+    </section>
+
+    <!-- PEÇAS -->
+    <section class="nina-pieces" aria-label="Peças Nina">
+
+      <div class="nina-pieces-inner">
+
+        <h2>PEÇAS</h2>
+
+        <div class="nina-pieces-grid">
+
+          <img
+            src="assents/pranchetas/nina/Ativo 1.png"
+            alt="Peça decorativa Nina"
+            class="nina-piece-large"
+          />
+
+          <img
+            src="assents/pranchetas/nina/Ativo 2.png"
+            alt="Vaso Nina"
+          />
+
+          <img
+            src="assents/pranchetas/nina/Ativo 4.png"
+            alt="Candeeiro Nina"
+          />
+
+          <img
+            src="assents/pranchetas/nina/Ativo 3.png"
+            alt="Peça decorativa com flores Nina"
+          />
+
+          <img
+            src="assents/pranchetas/nina/Ativo 5.png"
+            alt="Figuras decorativas Nina"
+            class="nina-piece-wide"
+          />
+
+        </div>
+
+      </div>
+
     </section>
 
   </main>
@@ -57,8 +218,8 @@
 
       <nav class="footer-nav" aria-label="Menu do rodapé">
         <a href="index.html">INDEX</a>
-        <a href="#work">WORK</a>
-        <a href="#about">ABOUT</a>
+        <a href="work.html">WORK</a>
+        <a href="index.html#about">ABOUT</a>
         <a href="contact.html">CONTACT</a>
       </nav>
 

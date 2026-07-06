@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="project-page victoria-page">
 
   <!-- HEADER / MENU -->
   <header class="site-header">
@@ -34,17 +34,181 @@
 
   <main>
 
-    <!-- PROJETO VICTORIA -->
-    <section class="project-full-image-section">
-       <img src="assents/pranchetas/victoriapranchetas/vic1.png" alt="Victoria 1" class="project-full-image">
-       <img src="assents/pranchetas/victoriapranchetas/vic2.png" alt="Victoria 1" class="project-full-image">
-       <img src="assents/pranchetas/victoriapranchetas/vic3.png" alt="Victoria 1" class="project-full-image">
-       <img src="assents/pranchetas/victoriapranchetas/vic4.png" alt="Victoria 1" class="project-full-image">
-       <img src="assents/pranchetas/victoriapranchetas/vic5.png" alt="Victoria 1" class="project-full-image">
-       <img src="assents/pranchetas/victoriapranchetas/vic6.png" alt="Victoria 1" class="project-full-image">
-       <img src="assents/pranchetas/victoriapranchetas/vic7.png" alt="Victoria 1" class="project-full-image">
-       <img src="assents/pranchetas/victoriapranchetas/vic8.png" alt="Victoria 1" class="project-full-image">
-       <img src="assents/pranchetas/victoriapranchetas/vic9.png" alt="Victoria 1" class="project-full-image">
+    <!-- HERO VICTORIA -->
+    <section class="victoria-hero" aria-labelledby="victoria-title">
+      <img
+        src="assents/pranchetas/victoriapranchetas/vic1.png"
+        alt="Vista urbana de Lisboa com edifícios históricos"
+        class="victoria-hero-image"
+      />
+
+    <!-- TEXTO INTRODUTÓRIO -->
+    <section class="victoria-intro">
+      <div class="victoria-intro-inner">
+        <p>
+          Victoria nasce da memória visual de Lisboa e da ligação entre o passado
+          urbano e a identidade contemporânea. O projeto procura criar uma marca
+          com presença forte, direta e facilmente reconhecível.
+        </p>
+
+        <p>
+          A identidade combina tipografia condensada, contraste elevado e uma
+          linguagem gráfica inspirada nos transportes, fachadas e detalhes da
+          cidade.
+        </p>
+
+        <p class="victoria-meta">
+          Identidade visual · Branding · Aplicações gráficas
+        </p>
+      </div>
+    </section>
+
+    <!-- IMAGEM GRANDE / CENA -->
+    <section class="victoria-scene">
+      <img
+        src="assents/pranchetas/victoriapranchetas/vic3.png"
+        alt="Elétrico amarelo numa rua de Lisboa com elementos gráficos da marca Victoria"
+        class="victoria-scene-image"
+        loading="lazy"
+      />
+
+    </section>
+
+    <!-- LOGO COM LINHAS / VÍDEO -->
+    <section class="victoria-logo-section" aria-label="Construção do logotipo Victoria">
+      <div class="victoria-logo-stage">
+
+        <!-- 
+          Se o teu vídeo já tiver o logo e as linhas, podes remover a imagem .victoria-logo-mark.
+          Se o vídeo só tiver as linhas, deixa os dois.
+        -->
+        <video
+          class="victoria-lines-video"
+          src="assents/pranchetas/victoriapranchetas/2.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          aria-hidden="true"
+        ></video>
+
+      </div>
+    </section>
+
+    <!-- SISTEMA VISUAL / CARTÕES -->
+    <section class="victoria-system" aria-labelledby="victoria-system-title">
+      <h2 id="victoria-system-title" class="sr-only">
+        Sistema visual da marca Victoria
+      </h2>
+
+      <div class="victoria-system-grid">
+
+        <article class="victoria-system-card victoria-card-small">
+          <img
+            src="assents/pranchetas/victoriapranchetas/quadrados/1x/1.png"
+            alt="Cartão com o logotipo Victoria"
+            loading="lazy"
+          />
+        </article>
+
+        <article class="victoria-system-card victoria-card-wide">
+          <img
+            src="assents/pranchetas/victoriapranchetas/quadrados/1x/2.png"
+            alt="Aplicação escura da marca Victoria"
+            loading="lazy"
+          />
+        </article>
+
+        <article class="victoria-system-card victoria-card-medium">
+          <img
+            src="assents/pranchetas/victoriapranchetas/quadrados/1x/3.png"
+            alt="Aplicação da marca Victoria em peça de roupa"
+            loading="lazy"
+          />
+        </article>
+
+        <article class="victoria-system-card victoria-card-small">
+          <img
+            src="assents/pranchetas/victoriapranchetas/quadrados/1x/4.png"
+            alt="Autocolante Victoria"
+            loading="lazy"
+          />
+        </article>
+
+        <article class="victoria-system-card victoria-card-wide">
+          <img
+            src="assents/pranchetas/victoriapranchetas/quadrados/1x/5.png"
+            alt="Aplicação da marca Victoria junto a carris"
+            loading="lazy"
+          />
+        </article>
+
+        <article class="victoria-system-card victoria-card-wide">
+          <img
+            src="assents/pranchetas/victoriapranchetas/quadrados/1x/6.png"
+            alt="Logotipo Victoria aplicado numa parede de pedra"
+            loading="lazy"
+          />
+        </article>
+
+        <article class="victoria-system-card victoria-card-tall">
+          <img
+            src="assents/pranchetas/victoriapranchetas/quadrados/1x/10.png"
+            alt="Aplicação vertical luminosa da marca Victoria"
+            loading="lazy"
+          />
+        </article>
+
+        <article class="victoria-system-card victoria-card-medium">
+          <img
+            src="assents/pranchetas/victoriapranchetas/quadrados/1x/7.png"
+            alt="Aplicação gráfica junto a sapatilhas"
+            loading="lazy"
+          />
+        </article>
+
+        <article class="victoria-system-card victoria-card-small victoria-colour-card dark-card">
+          <p>black</p>
+          <span>#000000</span>
+          <span>Pantone Black C</span>
+        </article>
+
+        <article class="victoria-system-card victoria-card-small victoria-colour-card light-card">
+          <p>off white</p>
+          <span>#faf7ef</span>
+          <span>Pantone 468 C</span>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- MOCKUPS -->
+    <section class="victoria-mockups" aria-label="Mockups da identidade Victoria">
+
+      <figure class="victoria-mockup">
+        <img
+          src="assents/pranchetas/victoriapranchetas/vic7.png"
+          alt="T-shirt preta com logotipo Victoria"
+          loading="lazy"
+        />
+      </figure>
+
+      <figure class="victoria-mockup">
+        <img
+          src="assents/pranchetas/victoriapranchetas/vic8.png"
+          alt="Portão branco com aplicação da marca Victoria"
+          loading="lazy"
+        />
+      </figure>
+
+      <figure class="victoria-mockup">
+        <img
+          src="assents/pranchetas/victoriapranchetas/vic9.png"
+          alt="Embalagem branca com identidade Victoria sobre calçada"
+          loading="lazy"
+        />
+      </figure>
+
     </section>
 
   </main>
