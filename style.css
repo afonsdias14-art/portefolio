@@ -8621,3 +8621,68 @@ body {
 .neo-process-section{
     padding-bottom:0;
 }
+
+/* ==========================================
+   NEO VIKINGS — vídeos rectangulares sem controlos
+   ========================================== */
+
+.neo-vikings-page .neo-media-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(24px, 4vw, 56px);
+  align-items: stretch;
+  margin-bottom: 54px;
+}
+
+/* Imagem e vídeo com o mesmo formato/tamanho */
+.neo-vikings-page .neo-side-media {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Vídeos sem fundo estranho */
+.neo-vikings-page .neo-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  object-fit: cover;
+  background: transparent;
+}
+
+/* Tenta esconder controlos nativos caso algum browser ainda mostre */
+.neo-vikings-page .neo-video::-webkit-media-controls {
+  display: none !important;
+}
+
+.neo-vikings-page .neo-video::-webkit-media-controls-panel {
+  display: none !important;
+}
+
+.neo-vikings-page .neo-video::-webkit-media-controls-play-button {
+  display: none !important;
+}
+
+.neo-vikings-page .neo-video::-webkit-media-controls-timeline {
+  display: none !important;
+}
+
+.neo-vikings-page .neo-video::-webkit-media-controls-current-time-display,
+.neo-vikings-page .neo-video::-webkit-media-controls-time-remaining-display {
+  display: none !important;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .neo-vikings-page .neo-media-row {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .neo-vikings-page .neo-video {
+    max-width: 100%;
+    margin: 0;
+  }
+}
