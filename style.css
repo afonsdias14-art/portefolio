@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'BIC';
-    src: url('assents/fonts/bic-regular.ttf') format('truetype');
+    src: url('assents/fonts/portregular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BIC';
-    src: url('assents/fonts/bic-bolt.ttf') format('truetype');
+    src: url('assents/fonts/portbolt.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
